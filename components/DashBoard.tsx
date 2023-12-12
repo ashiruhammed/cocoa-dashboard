@@ -33,6 +33,21 @@ function DashBoard() {
         <div className="mt-4">
           <Chart />
         </div>
+        <div className="border-l-8 border-[#492b2e] pl-2  mt-12">
+          <p className="space-x-1">
+            <span className="font-medium text-[#492b2e] text-[20px]">
+              COCOA
+            </span>
+            <span className="text-[#857C73]">Price</span>
+          </p>
+          <p className="space-x-2 font-medium text-[#492b2e]">
+            <span className="text-[28px]">4,132.22</span>
+            <span className="">+12.67 (+0.33%)</span>
+          </p>
+          <p className="text-[#857C73]">
+            11:55:00AM EDT 10/27/2023 MI Indication
+          </p>
+        </div>
       </div>
     </div>
   );
