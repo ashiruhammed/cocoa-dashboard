@@ -20,8 +20,8 @@ function DashBoardDetails() {
         </div>
       </div>
       <div className="border border-[#FAFAFA] rounded-md py-12 px-4 space-y-4">
-        {userInfoList.map(({ label, percent }) => (
-          <div className="flex gap-4 items-center">
+        {userInfoList.map(({ label, percent }, i) => (
+          <div key={i} className="flex gap-4 items-center">
             <div className="w-full grid grid-cols-[auto_1fr] gap-3 items-center">
               <p>{label}</p>
               <ProgressBar

@@ -36,8 +36,8 @@ function NavBar() {
         <div className=" font-medium">
           <h4>Menu</h4>
           <ul className="pl-4 space-y-6 mt-4 text-[#857C73]">
-            {navList.map((item) => (
-              <NavListComp label={item.label} Icon={item.Icon} />
+            {navList.map((item, i) => (
+              <NavListComp key={i} label={item.label} Icon={item.Icon} />
             ))}
           </ul>
         </div>
@@ -45,8 +45,8 @@ function NavBar() {
 
       <div className="text-[#857C73] flex flex-col items-center gap-8">
         <ul className="space-y-6">
-          {footerList.map((item) => (
-            <NavListComp label={item.label} Icon={item.Icon} />
+          {footerList.map((item, i) => (
+            <NavListComp key={i} label={item.label} Icon={item.Icon} />
           ))}
         </ul>
         <p className="font-medium text-[#69330D]">Copyright 2023 Cocoa World</p>
